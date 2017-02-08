@@ -1,0 +1,35 @@
+body{
+	padding-top: 50px;
+}
+#main{
+	background-color: #ccc;
+}
+#seachInput{
+	width:200px;
+}
+#navbar-brand
+{
+	font-style: blue;
+}
+.nav navbar-nav{
+	background-color: blue;
+}
+#p{
+	font-style: blue;
+}
+
+.modal-header{
+	background-color:#87CEEB;
+}
+.modal-body{
+	background-color: #EFFBFB;
+}
+.modal-footer{
+	background-color: #F2F2F2;
+}
+#success_message{ 
+display: none;
+}
+.j1{
+	color:#EFFBFB;
+}

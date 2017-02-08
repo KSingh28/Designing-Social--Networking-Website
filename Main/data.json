@@ -1,0 +1,30 @@
+[
+     
+     { "Name":"Alfred Gomez, Age:25","Sex":"Male","Interest":"Hockey","Country":"UAE" 
+     }, 
+     { "Name":"Berry Pierce, Age:26","Sex":"Female","Interest":"Books","Country":"Greece" },
+     { "Name":"Cameron Diaz, Age:40","Sex":"Female","Interest":"Acting","Country":"Puerto Rico"},
+     { "Name":"Diana Dev , Age:28","Sex":"Female","Interest":"Partying" ,"Country":"Canada"},
+     { "Name":"Elena D'cruz, Age:32","Sex":"Female","Interest":"Dance" ,"Country":"Romania"},
+     { "Name":"Farooq Sheikh, Age:40","Sex":"Male","Interest":"Singing" ,"Country":"India"},
+     { "Name":"Gilford Dusty, Age:21","Sex":"Male","Interest":"Golf" ,"Country":"Poland"},
+     { "Name":"Hring Holt, Age:19","Sex":"Male","Interest":"Music" ,"Country":"Panama"},
+     { "Name":"IIex Hwertun, Age:25","Sex":"Female","Interest":"Guitar" ,"Country":"Norway"},
+     { "Name":"Jack Rob, Age:20","Sex":"Male","Interest":"Music" ,"Country":"Netherlands"},
+     { "Name":"Kareena Kapoor,Age:35","Sex":"Female","Interest":"Acting" ,"Country":"Oman"},
+     { "Name":"Laila haq,Age:28","Sex":"Female","Interest":"Dating" ,"Country":"Morocco"},
+     { "Name":"Mira Nair,Age:45","Sex":"Female","Interest":"Movie Direction","Country":"India"},
+     { "Name":"Neo Marigold,Age:31","Sex":"Female","Interest":"Singing","Country":"Italy"},
+     { "Name":"Patricia Robbinson,Age:18","Sex":"Female","Interest":"Travel","Country":"Sweden"},
+     { "Name":"Scott Hamilton,Age:34","Sex":"Male","Interest":"Books","Country":"Austria"},
+     { "Name":"Ted Talk,Age:42","Sex":"Male","Interest":"Chatting","Country":"Mexico"},
+     { "Name":"Una Tate,Age:29","Sex":"Female","Interest":"Dance","Country":"Iceland"},
+     { "Name":"Vail,Age:22","Sex":"Male","Interest":"Piano","Country":"Hungry"},
+     { "Name":"Warren Buffet,Age:54","Sex":"Male","Interest":"Money","Country":"Latvia"},
+     { "Name":"York Worth,Age:45","Sex":"Male","Interest":"Cruise Partying","Country":"Luxembourg"},
+     { "Name":"Zandra,Age:21","Sex":"Female","Interest":"Confused","Country":"Macau"}
+     
+
+
+]
+

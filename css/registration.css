@@ -1,0 +1,11 @@
+.main_div
+{
+padding-top: 50px;	
+background-color: ivory;
+}
+
+.panel1
+{
+background-color: #F6D8CE;
+}
+#success_message{ display: none;}

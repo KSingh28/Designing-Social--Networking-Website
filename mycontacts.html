@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>MyContacts Page</title>
+
+	<meta charset="utf-8">
+ 
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"/>
+ <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <link href="jquery-ui.css" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+       <script>
+         $(document).ready(function(){
+               $("#myAccordion").accordion();
+               $(".source li").draggable({helper:"clone"});
+               $("#cart").droppable({drop:function(event,ui){
+               	     $("#items").append($("<li></li>").text(ui.draggable.text()));
+               }});
+         });
+       </script>
+     
+       <style>
+           #myAccordion{
+           	width:400px;
+           	float:left;
+           	margin: 25px;
+           	background-color: gold;
+
+           } 
+        #cart
+          {
+          	  width: 400px;
+          	  height:400px;
+          	  border: 2px solid black;
+          	  float:left;
+          	  background-color: #FFCBA4;
+          }
+          .source
+          {
+                  background-color:#f2f2f2;
+          }
+
+
+       </style>
+ </head>
+<body>
+<h2>SearchNamebyAlphabet</h2>	
+<div id="myAccordion">
+	   <h3>A</h3>
+	     <ul class="source">
+	     	<li>Alfred Gomez</li>
+            <li>Aaltink  Kardos</li>
+            <li>Alex Grob</li>
+            <li>Amy Watson</li>
+	     </ul>
+	     <h3>B</h3>
+	     <ul class="source">
+	     	<li>Berry Pierce</li>
+            <li>Blake  Lively</li>
+            <li>Ben Affleck</li>
+            <li>Brooka Conmara</li>
+	     </ul>
+	     <h3>C</h3>
+	     <ul class="source">
+	     	<li>Cameron Diaz</li>
+            <li>Connie Wang</li>
+            <li>Carl Jackson</li>
+            <li>Caleb Watt</li>
+	     </ul>
+</div>	     
+  <div id="cart">
+       <h2>My contacts</h2>
+       <ol id="items"></ol>
+  </div>
+</body>
+</html>
+

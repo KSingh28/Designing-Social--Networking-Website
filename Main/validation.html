@@ -1,0 +1,32 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+</head>
+<body>
+	
+   <script>
+   function validateEmail(){
+      var text=document.forms["anything"]["email"].value;
+
+
+      var atpos = text.inindexOf("@")
+      var dotpos = text.lastIndexOf(".");
+
+      if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 > text.length) {
+          alert("Please enter a valid email address.");
+          return false;
+
+      }
+
+   }   
+   </script>
+
+   <form name="anything" action="index.html" onsubmit="return validateEmail()" method="post">
+   	Username: <input type="text" name="email"/>
+    <input type="submit" value="Submit!"/>
+
+   </form>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+<!-- Bootstrap core CSS -->
+<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="justified-nav.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#my-navbar">
+   <!-- Navbar -->
+
+   <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+   	<div class="container">
+       <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" >
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           </button>        
+
+       </div><!--Navbar Header-->
+
+<!-- The justified navigation menu is meant for single line per list item.
+Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted">Welcome Khushboo!!</h3>
+		 <a href="" class="btn btn-info navbar-btn navbar-right" data-toggle="modal" data-target="#myModal2" onclick="myFunction()">Log Out</a>
+        <nav>
+          <ul class="nav nav-justified">
+		  	  <ul class="nav nav-tabs">
+		       <li role="presentation" class="dropdown active">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">My Profile <span class="caret"></span>
+                  </a>
+					<ul class="dropdown-menu">
+					<li><a href="#">Update My Profile</a></li>
+					<li><a href="mycontacts.html" title="My Contacts" target="ifrm" align="top">View My Contacts</a></li>
+					<li><a data-toggle="modal" data-target="#chpwd_modal">Change My Password</a></li>
+					</ul>
+			 <li><a class="header_link4" href="searchfinal.html" title="search" target="ifrm" align="top">Search</a></li>
+             <li><a href="mail.html" title="mail" target="ifrm" align="top">Mail</a></li>
+			 <li><a href="contact_us.html" title="contact_us" target="ifrm" align="top">Contact Us</a></li>
+  </li>
+</ul>
+		   <!--need to make it dropdown - Options- view my profile, update profile, view my contacts, change my passsword, needto create logout button, -->
+</ul>
+</nav>
+</div>
+</div><!--End container-->
+</nav><!--End navbar-->
+
+<!-- Modal -->
+<div class="modal fade" id="chpwd_modal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" align="center"><b><u>Change Password Form</u></b></h4>
+        </div>
+		<!-- Modal Body-->
+        <div class="modal-body">
+		<form class="form-horizontal">
+           <div class="form-group">
+           <label class="col-md-4 control-label" >Enter Old Password:</label> 
+           <div class="col-md-6 inputGroupContainer">
+           <div class="input-group">
+           <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+           <input type="password" name="old_password" placeholder="Old Password" class="form-control">
+           </div>
+		   <div class="col-md-2"></div>
+           </div>
+           </div>
+
+           <div class="form-group">
+           <label class="col-md-4 control-label" >Enter New Password:</label> 
+           <div class="col-md-6 inputGroupContainer">
+           <div class="input-group">
+           <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+           <input type="password" name="new_password" placeholder="New Password" class="form-control">
+           </div>
+		   <div class="col-md-2"></div>
+           </div>
+           </div>
+
+           <div class="form-group">
+           <label class="col-md-4 control-label" >Confirm New Password:</label> 
+           <div class="col-md-6 inputGroupContainer">
+           <div class="input-group">
+           <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+           <input type="password" name="con_password" placeholder="Confirm Password" class="form-control">
+           </div>
+           </div>
+           </div>
+         </div>
+		</form>
+		
+        <div class="modal-footer text-center">
+		 <div class="col-md-4"></div>
+		  <button class="btn btn-default btn-success col-md-3" data-dismiss="modal" type="submit">Change Password</button>
+		  <button class="btn btn-default btn-info col-md-3" data-dismiss="modal" type="button" onclick="cpwdreset()" align="center">Clear Form</button>
+         <div class="alert alert-success col-md-4 col-md-offset-4 inputGroupContainer" role="alert" id="success_message">Password Changed Successfully          
+         <i class="glyphicon glyphicon-ok"></i> 
+         </div>
+        </div>
+    </div>
+  </div>
+</div>
+   
+<!--Jumbotron-->
+<div class="jumbotron">
+<div class="container text-center j1" >
+	   
+<!--Iframe Start-->  
+<div class="main_ifrm">
+<a class="header_link4" href="main_frame.html" title="My Profile" target="ifrm" align="top" > My Profile </a> 
+<iframe class="main_ifrm1" src="searchfinal.html" name="ifrm" width="1200" height="600" ></iframe>
+</div>
+<!--Iframe End-->  
+        
+</div><!--End container-->
+</div>  <!--End jumbotron-->  
+
+
+<div class="panel panel-default">
+  <div class="panel-footer">
+   <div class="btn-group">
+             <img src="images/logo.png" width="50" height="35">   
+             <a href="" class="btn btn-log btn-default">Blog</a>
+             <a href="" class="btn btn-log btn-info">JoinUs</a>
+         </div> 
+  </div>
+</div>	
+	
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://code.jquery.com/jquery-2.1.4.min.js">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script>
+function myFunction() {
+  alert("Thank You for using our services");
+  window.close()
+ 
+}
+</script>
+
+</body>
+</html>
+
+
+

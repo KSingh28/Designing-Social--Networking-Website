@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Index Page</title>
+
+       
+       <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link rel="stylesheet" type="text/css" href="css/index.css">    
+
+
+    </head>
+    
+<body data-spy="scroll" data-target="#my-navbar">
+          
+<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+<div class="container">
+       <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" >
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           </button>
+           <a href="" class="navbar-brand"><i><strong>Rendezvous</strong></i></a>
+       </div><!--Navbar Header-->
+       <div class="collapse navbar-collapse" id="navbar-collapse">              
+        <a href="" class="btn btn-success navbar-btn navbar-right" data-toggle="modal" data-target="#myModal1" >SignUp</a>
+        <a href="" class="btn btn-info navbar-btn navbar-right" data-toggle="modal" data-target="#myModal">Log In</a>
+             <ul class="nav navbar-nav">
+             <li> <a href="#feedback">Feedback</a>
+             <li> <a href="#gallery">Gallery</a>
+             <li> <a href="#downloads">Downloads</a>
+             <li> <a href="#faq">FAQ</a>
+             <li> <a href="#contact">ContactUs</a>
+          </ul>
+       </div>
+</div><!--End container-->
+</nav><!--End navbar-->
+    
+<!--Jumbotron-->
+<div class="jumbotron">
+
+
+<!--Log In-->
+<div class="container"> 
+ <!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">    
+      <!-- Modal content-->
+         <div class="modal-content">
+         
+ <div class="modal-header m_login_header" style="padding:35px 50px;">
+         <button type="button" class="close col-md-3" data-dismiss="modal">&times;</button>
+         <h4><span class="glyphicon glyphicon-lock modal-title" align="center"></span><b>Login</b></h4>
+         </div>
+         <div class="modal-body modal-body-sm-4 m_login_body">
+
+<form data-toggle="validator" role="form">
+  
+  <div class="form-group">
+    <label for="inputEmail" class="control-label">Email Address</label>
+    <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="That email address is invalid" required>
+    <div class="help-block with-errors"></div>
+  </div>
+  </hr>
+  <div class="form-group">
+  	<label for="inputPassword" class="control-label"  align:"left">Password</label>
+    <div class="form-group col-sm-6">
+      <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+      <span class="help-block">Minimum of 6 characters</span>
+    </div>
+    <div class="form-group col-sm-6">
+      <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+      <div class="help-block with-errors"></div>
+    </div>
+  </div>
+ 
+  
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary" onclick="myFunction()">Submit</button>
+  </div>
+</form>
+    
+    </div>
+
+
+
+
+
+
+      </div>     
+    </div>
+  </div>
+</div>
+<!--Log In ends here-->
+
+<!--Signup starts here-->
+<div class="container">
+<!-- Modal -->
+<div class="modal fade" id="myModal1" role="dialog">
+<div class="modal-dialog">
+    
+<!-- Modal content-->
+<div class="modal-content">
+
+<!-- Registration Form Tab1 -->
+<div class="modal-header m1_modal_header">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+  <h4 class="modal-title" align="center"><b><u>Registration Form:</b></u></h4>
+</div>
+
+<div class="tabbable">
+   <ul class="nav nav-tabs" id="tab_bar">
+   <li class="active"><a href="#tab1" data-toggle="tab">Account Details</a></li>
+   <li><a href="#tab2" data-toggle="tab">Personal Details</a></li>
+   </ul>
+<div class="tab-content">
+   <!-- TAB1-->
+   <div class="tab-pane active" id="tab1">
+   <div class="control-group">
+<!-- Modal Body-->
+<div class="modal-body m1_modal_body">
+<form class="form-horizontal">
+	<!-- Text input-->
+	<div class="form-group">
+	<label class="col-lg-4 control-label">First Name:</label>  
+		<div class="col-lg-6 inputGroupContainer">
+		<div class="input-group">
+		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+		<input name="first_name" placeholder="First Name" class="form-control" type="text">
+		</div>
+		<div class="col-lg-2"></div>
+		</div>
+	</div>
+
+	<!-- Text input-->
+	<div class="form-group">
+	<label class="col-lg-4 control-label">Last Name:</label> 
+	 <div class="col-lg-6 inputGroupContainer">
+	  <div class="input-group">
+	   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+	   <input name="last_name" placeholder="Last Name" class="form-control" type="text">
+	  </div>
+	 <div class="col-lg-2"></div>
+	</div>
+	</div>
+	
+	<!-- Text input-->
+	<div class="form-group">
+	<label class="col-lg-4 control-label">E-Mail:</label>  
+	 <div class="col-lg-6 inputGroupContainer">
+	  <div class="input-group">
+	   <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+	    <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+	  </div>
+	 <div class="col-lg-2"></div>
+	</div>
+	</div>
+
+	<!-- Text input-->      
+	<div class="form-group">
+	<label class="col-lg-4 control-label">Phone #:</label>  
+		<div class="col-lg-6 inputGroupContainer">
+		<div class="input-group">
+			<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+	<input name="phone" placeholder="+1 (617)617-6171" class="form-control" type="text">
+		</div>
+	</div>
+	</div>
+
+	<!-- Text input-->
+	<div class="form-group">
+	<label class="col-lg-4 control-label">Date of Birth:</label>  
+		<div class="col-lg-6 inputGroupContainer">
+		<div class="input-group">
+			<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+	<input type="date" class="form-control" id="dob" placeholder="Date of Birth">
+		</div>
+	</div>
+	</div>
+  
+	  
+	<!-- Text input-->
+	<div class="form-group">
+	<label class="col-lg-4 control-label">Address:</label>  
+		<div class="col-lg-6 inputGroupContainer">
+		<div class="input-group">
+			<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+	<input name="address" placeholder="Address" class="form-control" type="text">
+		</div>
+	</div>
+	</div>
+
+	<!-- Text input-->
+	<div class="form-group">
+	<label class="col-lg-4 control-label">City:</label>  
+		<div class="col-lg-6 inputGroupContainer">
+		<div class="input-group">
+			<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+	<input name="city" placeholder="City" class="form-control"  type="text">
+		</div>
+	</div>
+	</div>
+
+	<!-- Select State -->
+	<div class="form-group"> 
+	<label class="col-lg-4 control-label">State:</label>
+		<div class="col-lg-6 selectContainer">
+		<div class="input-group">
+		<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+		<select name="state" class="form-control selectpicker" >
+		<option value=" " >Please select your State, if in the US</option>
+		<option>Other</option>
+		<option>Alabama</option>
+		<option>Alaska</option>
+		<option >Arizona</option>
+		<option >Arkansas</option>
+		<option >California</option>
+		<option >Colorado</option>
+		<option >Connecticut</option>
+		<option >Delaware</option>
+		<option >District of Columbia</option>
+		<option> Florida</option>
+		<option >Georgia</option>
+		<option >Hawaii</option>
+		<option >daho</option>
+		<option >Illinois</option>
+		<option >Indiana</option>
+		<option >Iowa</option>
+		<option> Kansas</option>
+		<option >Kentucky</option>
+		<option >Louisiana</option>
+		<option>Maine</option>
+		<option >Maryland</option>
+		<option> Massachusetts</option>
+		<option >Michigan</option>
+		<option >Minnesota</option>
+		<option>Mississippi</option>
+		<option>Missouri</option>
+		<option>Montana</option>
+		<option>Nebraska</option>
+		<option>Nevada</option>
+		<option>New Hampshire</option>
+		<option>New Jersey</option>
+		<option>New Mexico</option>
+		<option>New York</option>
+		<option>North Carolina</option>
+		<option>North Dakota</option>
+		<option>Ohio</option>
+		<option>Oklahoma</option>
+		<option>Oregon</option>
+		<option>Pennsylvania</option>
+		<option>Rhode Island</option>
+		<option>South Carolina</option>
+		<option>South Dakota</option>
+		<option>Tennessee</option>
+		<option>Texas</option>
+		<option> Uttah</option>
+		<option>Vermont</option>
+		<option>Virginia</option>
+		<option >Washington</option>
+		<option >West Virginia</option>
+		<option>Wisconsin</option>
+		<option >Wyoming</option>
+		</select>
+	</div>
+	</div>
+	</div>
+
+	<!-- Text input-->
+	<div class="form-group">
+	<label class="col-lg-4 control-label">Zip Code:</label>  
+		<div class="col-lg-6 inputGroupContainer">
+		<div class="input-group">
+			<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+	<input name="zip" placeholder="Zip Code" class="form-control"  type="text">
+		</div>
+	</div>
+	</div>
+
+	<div class="form-group"> 
+	<label class="col-lg-4 control-label">Country:</label>
+		<div class="col-lg-6 selectContainer">
+		<div class="input-group">
+			<span class="input-group-addon"><i class="glyphicon glyphicon-flag"></i></span>
+		<select name="state" class="form-control selectpicker" >
+		<option value=" " >Please select your Country</option>
+		<option value="AF">Afghanistan</option>
+								<option value="AL">Albania</option>
+								<option value="DZ">Algeria</option>
+								<option value="AS">American Samoa</option>
+								<option value="AD">Andorra</option>
+								<option value="AO">Angola</option>
+								<option value="AI">Anguilla</option>
+								<option value="AQ">Antarctica</option>
+								<option value="AG">Antigua and Barbuda</option>
+								<option value="AR">Argentina</option>
+								<option value="AM">Armenia</option>
+								<option value="AW">Aruba</option>
+								<option value="AU">Australia</option>
+								<option value="AT">Austria</option>
+								<option value="AZ">Azerbaijan</option>
+								<option value="BS">Bahamas</option>
+								<option value="BH">Bahrain</option>
+								<option value="BD">Bangladesh</option>
+								<option value="BB">Barbados</option>
+								<option value="BY">Belarus</option>
+								<option value="BE">Belgium</option>
+								<option value="BZ">Belize</option>
+								<option value="BJ">Benin</option>
+								<option value="BM">Bermuda</option>
+								<option value="BT">Bhutan</option>
+								<option value="BO">Bolivia</option>
+								<option value="BA">Bosnia and Herzegowina</option>
+								<option value="BW">Botswana</option>
+								<option value="BV">Bouvet Island</option>
+								<option value="BR">Brazil</option>
+								<option value="IO">British Indian Ocean Territory</option>
+								<option value="BN">Brunei Darussalam</option>
+								<option value="BG">Bulgaria</option>
+								<option value="BF">Burkina Faso</option>
+								<option value="BI">Burundi</option>
+								<option value="KH">Cambodia</option>
+								<option value="CM">Cameroon</option>
+								<option value="CA">Canada</option>
+								<option value="CV">Cape Verde</option>
+								<option value="KY">Cayman Islands</option>
+								<option value="CF">Central African Republic</option>
+								<option value="TD">Chad</option>
+								<option value="CL">Chile</option>
+								<option value="CN">China</option>
+								<option value="CX">Christmas Island</option>
+								<option value="CC">Cocos (Keeling) Islands</option>
+								<option value="CO">Colombia</option>
+								<option value="KM">Comoros</option>
+								<option value="CG">Congo</option>
+								<option value="CD">Congo, the Democratic Republic of the</option>
+								<option value="CK">Cook Islands</option>
+								<option value="CR">Costa Rica</option>
+								<option value="CI">Cote d'Ivoire</option>
+								<option value="HR">Croatia (Hrvatska)</option>
+								<option value="CU">Cuba</option>
+								<option value="CY">Cyprus</option>
+								<option value="CZ">Czech Republic</option>
+								<option value="DK">Denmark</option>
+								<option value="DJ">Djibouti</option>
+								<option value="DM">Dominica</option>
+								<option value="DO">Dominican Republic</option>
+								<option value="TP">East Timor</option>
+								<option value="EC">Ecuador</option>
+								<option value="EG">Egypt</option>
+								<option value="SV">El Salvador</option>
+								<option value="GQ">Equatorial Guinea</option>
+								<option value="ER">Eritrea</option>
+								<option value="EE">Estonia</option>
+								<option value="ET">Ethiopia</option>
+								<option value="FK">Falkland Islands (Malvinas)</option>
+								<option value="FO">Faroe Islands</option>
+								<option value="FJ">Fiji</option>
+								<option value="FI">Finland</option>
+								<option value="FR">France</option>
+								<option value="FX">France, Metropolitan</option>
+								<option value="GF">French Guiana</option>
+								<option value="PF">French Polynesia</option>
+								<option value="TF">French Southern Territories</option>
+								<option value="GA">Gabon</option>
+								<option value="GM">Gambia</option>
+								<option value="GE">Georgia</option>
+								<option value="DE">Germany</option>
+								<option value="GH">Ghana</option>
+								<option value="GI">Gibraltar</option>
+								<option value="GR">Greece</option>
+								<option value="GL">Greenland</option>
+								<option value="GD">Grenada</option>
+								<option value="GP">Guadeloupe</option>
+								<option value="GU">Guam</option>
+								<option value="GT">Guatemala</option>
+								<option value="GN">Guinea</option>
+								<option value="GW">Guinea-Bissau</option>
+								<option value="GY">Guyana</option>
+								<option value="HT">Haiti</option>
+								<option value="HM">Heard and Mc Donald Islands</option>
+								<option value="VA">Holy See (Vatican City State)</option>
+								<option value="HN">Honduras</option>
+								<option value="HK">Hong Kong</option>
+								<option value="HU">Hungary</option>
+								<option value="IS">Iceland</option>
+								<option value="IN">India</option>
+								<option value="ID">Indonesia</option>
+								<option value="IR">Iran (Islamic Republic of)</option>
+								<option value="IQ">Iraq</option>
+								<option value="IE">Ireland</option>
+								<option value="IL">Israel</option>
+								<option value="IT">Italy</option>
+								<option value="JM">Jamaica</option>
+								<option value="JP">Japan</option>
+								<option value="JO">Jordan</option>
+								<option value="KZ">Kazakhstan</option>
+								<option value="KE">Kenya</option>
+								<option value="KI">Kiribati</option>
+								<option value="KP">Korea, Democratic People's Republic of</option>
+								<option value="KR">Korea, Republic of</option>
+								<option value="KW">Kuwait</option>
+								<option value="KG">Kyrgyzstan</option>
+								<option value="LA">Lao People's Democratic Republic</option>
+								<option value="LV">Latvia</option>
+								<option value="LB">Lebanon</option>
+								<option value="LS">Lesotho</option>
+								<option value="LR">Liberia</option>
+								<option value="LY">Libyan Arab Jamahiriya</option>
+								<option value="LI">Liechtenstein</option>
+								<option value="LT">Lithuania</option>
+								<option value="LU">Luxembourg</option>
+								<option value="MO">Macau</option>
+								<option value="MK">Macedonia, The Former Yugoslav Republic of</option>
+								<option value="MG">Madagascar</option>
+								<option value="MW">Malawi</option>
+								<option value="MY">Malaysia</option>
+								<option value="MV">Maldives</option>
+								<option value="ML">Mali</option>
+								<option value="MT">Malta</option>
+								<option value="MH">Marshall Islands</option>
+								<option value="MQ">Martinique</option>
+								<option value="MR">Mauritania</option>
+								<option value="MU">Mauritius</option>
+								<option value="YT">Mayotte</option>
+								<option value="MX">Mexico</option>
+								<option value="FM">Micronesia, Federated States of</option>
+								<option value="MD">Moldova, Republic of</option>
+								<option value="MC">Monaco</option>
+								<option value="MN">Mongolia</option>
+								<option value="MS">Montserrat</option>
+								<option value="MA">Morocco</option>
+								<option value="MZ">Mozambique</option>
+								<option value="MM">Myanmar</option>
+								<option value="NA">Namibia</option>
+								<option value="NR">Nauru</option>
+								<option value="NP">Nepal</option>
+								<option value="NL">Netherlands</option>
+								<option value="AN">Netherlands Antilles</option>
+								<option value="NC">New Caledonia</option>
+								<option value="NZ">New Zealand</option>
+								<option value="NI">Nicaragua</option>
+								<option value="NE">Niger</option>
+								<option value="NG">Nigeria</option>
+								<option value="NU">Niue</option>
+								<option value="NF">Norfolk Island</option>
+								<option value="MP">Northern Mariana Islands</option>
+								<option value="NO">Norway</option>
+								<option value="OM">Oman</option>
+								<option value="PK">Pakistan</option>
+								<option value="PW">Palau</option>
+								<option value="PA">Panama</option>
+								<option value="PG">Papua New Guinea</option>
+								<option value="PY">Paraguay</option>
+								<option value="PE">Peru</option>
+								<option value="PH">Philippines</option>
+								<option value="PN">Pitcairn</option>
+								<option value="PL">Poland</option>
+								<option value="PT">Portugal</option>
+								<option value="PR">Puerto Rico</option>
+								<option value="QA">Qatar</option>
+								<option value="RE">Reunion</option>
+								<option value="RO">Romania</option>
+								<option value="RU">Russian Federation</option>
+								<option value="RW">Rwanda</option>
+								<option value="KN">Saint Kitts and Nevis</option>
+								<option value="LC">Saint LUCIA</option>
+								<option value="VC">Saint Vincent and the Grenadines</option>
+								<option value="WS">Samoa</option>
+								<option value="SM">San Marino</option>
+								<option value="ST">Sao Tome and Principe</option>
+								<option value="SA">Saudi Arabia</option>
+								<option value="SN">Senegal</option>
+								<option value="SC">Seychelles</option>
+								<option value="SL">Sierra Leone</option>
+								<option value="SG">Singapore</option>
+								<option value="SK">Slovakia (Slovak Republic)</option>
+								<option value="SI">Slovenia</option>
+								<option value="SB">Solomon Islands</option>
+								<option value="SO">Somalia</option>
+								<option value="ZA">South Africa</option>
+								<option value="GS">South Georgia and the South Sandwich Islands</option>
+								<option value="ES">Spain</option>
+								<option value="LK">Sri Lanka</option>
+								<option value="SH">St. Helena</option>
+								<option value="PM">St. Pierre and Miquelon</option>
+								<option value="SD">Sudan</option>
+								<option value="SR">Suriname</option>
+								<option value="SJ">Svalbard and Jan Mayen Islands</option>
+								<option value="SZ">Swaziland</option>
+								<option value="SE">Sweden</option>
+								<option value="CH">Switzerland</option>
+								<option value="SY">Syrian Arab Republic</option>
+								<option value="TW">Taiwan, Province of China</option>
+								<option value="TJ">Tajikistan</option>
+								<option value="TZ">Tanzania, United Republic of</option>
+								<option value="TH">Thailand</option>
+								<option value="TG">Togo</option>
+								<option value="TK">Tokelau</option>
+								<option value="TO">Tonga</option>
+								<option value="TT">Trinidad and Tobago</option>
+								<option value="TN">Tunisia</option>
+								<option value="TR">Turkey</option>
+								<option value="TM">Turkmenistan</option>
+								<option value="TC">Turks and Caicos Islands</option>
+								<option value="TV">Tuvalu</option>
+								<option value="UG">Uganda</option>
+								<option value="UA">Ukraine</option>
+								<option value="AE">United Arab Emirates</option>
+								<option value="GB">United Kingdom</option>
+								<option value="US">United States</option>
+								<option value="UM">United States Minor Outlying Islands</option>
+								<option value="UY">Uruguay</option>
+								<option value="UZ">Uzbekistan</option>
+								<option value="VU">Vanuatu</option>
+								<option value="VE">Venezuela</option>
+								<option value="VN">Viet Nam</option>
+								<option value="VG">Virgin Islands (British)</option>
+								<option value="VI">Virgin Islands (U.S.)</option>
+								<option value="WF">Wallis and Futuna Islands</option>
+								<option value="EH">Western Sahara</option>
+								<option value="YE">Yemen</option>
+								<option value="YU">Yugoslavia</option>
+								<option value="ZM">Zambia</option>
+								<option value="ZW">Zimbabwe</option>
+		</select>
+	</div>
+	</div>
+	</div>
+
+	<!-- Text input-->
+	<div class="form-group">
+	<label class="col-lg-4 control-label" >Password:</label> 
+		<div class="col-lg-6 inputGroupContainer">
+		<div class="input-group">
+	<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+	<input type="password" name="password" placeholder="Password" class="form-control"  type="text">
+		</div>
+	</div>
+	</div>
+
+	<!-- Text input-->
+	<div class="form-group">
+	<label class="col-lg-4 control-label" >Confirm Password:</label> 
+		<div class="col-lg-6 inputGroupContainer">
+		<div class="input-group">
+	<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+	<input type="password"  name="c_password" placeholder="Password" class="form-control"  type="text">
+		</div>
+	</div>
+	</div>
+	</form>
+</div>
+</div>
+</div>
+	
+<!-- Registration Form Tab2 -->
+          <!-- TAB 2 -->
+<div class="tab-pane" id="tab2">
+<div class="control-group">
+
+<!-- Modal Body-->
+<div class="modal-body m1_modal_body">
+<form class="form-horizontal">
+	
+<!-- Select Gender -->
+	<div class="form-group"> 
+	<label class="col-lg-4 control-label">Select Gender:</label>
+		<div class="col-lg-6 selectContainer">
+		<div class="input-group">
+		<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+		<select name="state" class="form-control selectpicker" >
+		<option value=" " ></option>
+		<option>Male</option>
+		<option>Female</option>
+		<option>Prefer not to disclose</option>
+		</select>
+	</div>
+	</div>
+	</div>
+
+<!-- Seeking Gender -->
+	<div class="form-group"> 
+	<label class="col-lg-4 control-label">Seeking Gender:</label>
+		<div class="col-lg-6 selectContainer">
+		<div class="input-group">
+		<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+		<select name="state" class="form-control selectpicker" >
+		<option value=" " ></option>
+		<option>Male</option>
+		<option>Female</option>
+		</select>
+	</div>
+	</div>
+	</div>
+
+<!-- About Yourself -->
+	<div class="form-group"> 
+	<label class="col-lg-4 control-label">About Yourself:</label>
+		<div class="col-lg-8 selectContainer">
+		<div class="input-group">
+		<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+		<textarea class="form-control" rows="4"></textarea>	
+	</div>
+	</div>
+	</div>	
+
+<!-- First Impression -->
+	<div class="form-group"> 
+	<label class="col-lg-4 control-label">First Impression on meeting You would be?:</label>
+		<div class="col-lg-8 selectContainer">
+		<div class="input-group">
+		<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+		<textarea class="form-control" rows="4"></textarea>	
+	</div>
+	</div>
+	</div>
+	
+	<div class="form-group">
+        <div class="col-xs-6 col-xs-offset-3">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="agree" value="agree" href="#" onClick="javascript:launchWindow('termsandconditions.html','TermsAndCond',700,550,'');" />I,Agree with the terms and conditions.
+                </label>
+            </div>
+        </div>
+    </div>	
+	
+	</form>
+	
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+
+<div class="modal-footer text-center m1_modal_footer">
+  	<div class="btn-group">
+    <button class="btn" id="prevtab" type="button">Prev</button>
+    <button class="btn" id="nexttab" type="button">Next</button>
+    </div>
+
+</div>
+	
+<div class="modal-footer text-center m2_modal_footer">
+  <div class="col-md-4"></div>
+	 <input type="submit" class="btn btn-success disabled" data-dismiss="modal" align="center" value="Register">
+	 <button type="button" id="m_reset" class="btn btn-default" data-dismiss="modal" onclick="myFunction1()" align="center">Reset</button>
+<!-- Success message -->
+     <div class="alert alert-success col-md-4 col-md-offset-4 inputGroupContainer" role="alert" id="success_message">Registration Successful          
+     <i class="glyphicon glyphicon-ok"></i> 
+     </div>
+</div>	
+</div>	
+</div>	
+</div>		
+</div>	
+</div>	
+</div>	
+
+<!--Index Page Continues ends here-->
+<div class="container text-center" >
+        <img src="images/logo.png">
+             <h1>Welcome to Rendezvous </h1>
+             <p>Millions of member profiles.
+              Thousands more joining each day.</p>
+
+        <div class="btn-group">
+           <a href="" class="btn btn-log btn-warning">Download App</a>
+            <a href="" class="btn btn-log btn-info">Visit Store</a>
+             <a href="" class="btn btn-log btn-default">Blog</a>
+              <a href="" class="btn btn-log btn-info">JoinUs</a>
+         </div>     
+</div><!--End container-->
+</div>
+    <!--Gallery--> 
+<div class="container">
+	  <section>
+	  	 <div class="page-header" id="gallery">
+	  	   <h2>Glimpses: <small>Hear their stories</small></h2>
+	  	 </div>		 
+    	   <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+	  	   <ol class="carousel-indicators" >
+	  	       <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+	  	       <li data-target="#screenshot-carousel" data-slide-to="1"></li>
+	  	       <li data-target="#screenshot-carousel" data-slide-to="2"></li>
+	  	       <li data-target="#screenshot-carousel" data-slide-to="3"></li>
+	  	    </ol> 
+	  	  <div class="carousel-inner">
+            <div class="item active">
+                	 <img src="images/pic1.jpg" alt="Text of the image">
+                	 <div class="carousel-caption">
+                	 <h3>  </h3>
+                	 <p>   </p>
+                	 </div>
+            </div>	
+          <div class="item">
+                	 <img src="images/pic2.jpg" alt="Text of the image">
+                	 <div class="carousel-caption">
+                	 <h3> "How is that even possible!!" </h3>
+                	 <p>  Someone so humble and so perfect. </p>
+                	 </div>
+          </div>
+          <div class="item">
+                	 <img src="images/pic3.jpg" alt="Text of the image">
+                	 <div class="carousel-caption">
+                	 <h3>  </h3>
+                	 <p>   </p>
+                	 </div>
+          </div>
+          <div class="item">
+                	 <img src="images/pic4.jpg" alt="Text of the image">
+                	 <div class="carousel-caption">
+                	 <h3> "Interesting catch-up" </h3>
+                	 <p>  Visited new places with an interesting new friend.</br>Locked the wishes for a happy future:) </p>
+                	 </div>
+          </div>  	    	
+	  	  </div><!--End inner--> 
+	  	    <a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+	  	    <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+	  	    <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+	  	   </div><!--End Carousel--> 
+	  </section>		
+</div>
+
+<!--call to action-->
+
+		<div class="well">		
+	      <div class="container text-center" id="download_app">
+            <h3>Download the <span style="color:#FFA500">Rendezvous</span> App From the Following</h3>
+            <a href="http://www.apple.com/osx/apps/app-store/"><img src="images/avail_app_store.png" alt="appstore_logo" style="width:125px;height:42px;border:0"></a>
+			<a href="https://play.google.com/store?hl=en"><img src="images/avail_play_store.png" alt="playstore_logo" style="width:125px;height:42px;border:0"></a>
+			<a href="https://www.microsoft.com/en-us/store/apps"><img src="images/avail_win_store.png" alt="winstore_logo" style="width:125px;height:42px;border:0"></a>
+		   </div><!--End container-->
+		
+		<hr class="vertical">
+		   <div class="container text-center" id="subscribe">
+            <h3><span style="color:#FFA500">Subscribe</span> for more Info</h3>
+              <form action="" class="form-inline">
+               <div class="form-group">
+                   <label for="subscription">Enter your Email to <span style="color:#FFA500">subscribe:</span></label>
+            	   <input type="text" class="form-control" id="email" placeholder="Enter your email:">
+               </div>
+                 <button type="submit" class="btn btn-warning">Subscribe</button>
+                 <hr>
+             </form>  
+		   </div><!--End container--> 
+		   
+		   
+		   <div class="container text-center" id="follow_us">
+            <h3>Follow Us on <span style="color:#3b5998">Social Media</span></h3>
+			<a href="https://www.facebook.com/rendezvous"><img src="images/fb.png" alt="fb_logo" style="width:42px;height:42px;border:0"></a>
+			<a href="https://twitter.com/rendezvous"><img src="images/twitter.png" alt="twitter_logo" style="width:42px;height:42px;border:0"></a>
+			<a href="https://plus.google.com/collections/featured/rendezvous"><img src="images/gplus.png" alt="gplus_logo" style="width:42px;height:42px;border:0"></a>
+			<a href="https://www.instagram.com/rendezvous"><img src="images/insta.png" alt="insta_logo" style="width:42px;height:42px;border:0"></a>
+            </div>
+		   </div><!--End container--> 
+		
+<hr>		
+<p align="center">© 2015, www.rendezvous.com, Inc. or its affiliates<p>
+
+
+<script>
+function myFunction() {
+    window.open("main.html");
+}
+</script>
+
+
+<script>
+/* Script for Prev-Next Toggle*/
+var $tabs = $('.tabbable li');
+$('#prevtab').on('click', function() {
+    $tabs.filter('.active').prev('li').find('a[data-toggle="tab"]').tab('show');
+});
+$('#nexttab').on('click', function() {
+    $tabs.filter('.active').next('li').find('a[data-toggle="tab"]').tab('show');
+});		 
+
+</script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="validator.min.js"></script>
+
+</body>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,53 @@
+
+<html ng-app="myApp">
+<head>
+	<title>Search Page</title>
+	<link rel="stylesheet" type="text/css" href="search.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<script>
+    myApp=angular.module('myApp',[]);
+    myApp.controller('myController',function($scope,$http){
+
+    	$http.get('data.json').success(function(response){
+    		$scope.myData =response;
+    		
+    	});
+        $scope.removeName=function(row){
+    	   $scope.myData.splice($scope.myData.indexOf(row),1);
+        }
+        
+   	
+
+
+    });
+	</script>
+</head>
+<body ng-controller="myController">
+    <b>SearchByChoice</b> : <input id="entersearch"type="text" value="" ng-model="search"/>
+    <table border=1 id="searchtable">
+   <thead>
+    <tr>
+    		<th>Name</th>
+    		<th>Sex</th>
+    		<th>Interest</th>
+    		<th>Country</th>
+    		<th>Delete</th>
+            
+    	</tr>
+
+   </thead>
+   <tbody>   
+    	<tr ng-repeat="data in myData | filter : search ">
+    		<td>{{data.Name}}</td>
+    		<td>{{data.Sex}}</td>
+    		<td>{{data.Interest}}</td>
+    		<td>{{data.Country}}</td>	
+    		<td><a href=""  ng-click="removeName(data)">Remove</a></td>
+            
+    	</tr>
+   </tbody>   
+    </table>
+
+</body>
+</html>
